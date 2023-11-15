@@ -1,0 +1,33 @@
+#box{
+    /* background-color: brown; */
+    margin: 0%;
+    padding: 0%;
+}
+
+#text1{
+    width: 22rem;
+    height: 3rem;
+    font-size:medium;
+}
+
+#textarea{
+    width: 22rem;
+    height: 3rem;
+    font-size:medium;
+}
+
+
+#box2 {
+    background-color: rgba(64, 99, 77, 0.682);
+    display: flex;
+    padding: 10px 20px;
+    flex-direction:row;
+    align-items: center;
+    border-radius: 5px;
+    height: 8rem;
+    width: 55rem;
+}
+
+#label{
+    color: gray;
+}

@@ -1,0 +1,47 @@
+h2 {
+    color:rgb(38, 92, 57)
+}
+
+#box1{
+    background-color: rgba(64, 99, 77, 0.682);
+    display: flex;
+    padding: 10px 20px;
+    flex-direction:row;
+    align-items: center;
+    border-radius: 5px;
+    height: 8rem;
+    width: 55rem;
+}
+
+#textInput{
+    /* background-color: blue; */
+    /* color: brown; */
+    width: 22rem;
+    height: 3rem;
+    font-size:medium;
+}
+
+#description{
+    /* background-color: chartreuse; */
+    width: 22rem;
+    height: 3rem;
+    font-size:medium;
+}
+
+
+button{
+  padding: 10px 20px;
+  background-color: #e4b005;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b391d;
+  }
+  
+button:active {
+    background-color: #3e8e41;
+  }
