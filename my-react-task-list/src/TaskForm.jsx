@@ -4,24 +4,20 @@ import './TaskForm.css';
 const TaskForm = ({ addTask }) => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [error, setError] = useState('');
 
   const handleAddTask = () => {
-    if (title.trim().length < 3) {
-      setError('El nombre de la tarea debe tener al menos 3 caracteres.');
-      return;
+    if (title.trim().length > 2) { 
+      addTask({ title, description, completed: false });
+      setTitle('');
+      setDescription('');
+    } else {
+      alert('El título debe tener al menos 3 caracteres.');
     }
-
-    addTask({ title, description: description || '', completed: false });
-    setTitle('');
-    setDescription('');
-    setError('');
   };
 
   return (
     <div>
       <h2>Add Task</h2>
-      {error && <p className="error">{error}</p>}
       <div className="task-form">
         <input
           type="text"
@@ -41,4 +37,5 @@ const TaskForm = ({ addTask }) => {
 };
 
 export default TaskForm;
+
 
